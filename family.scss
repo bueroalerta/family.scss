@@ -211,6 +211,24 @@
     }
 }
 
+/// Select the first exact child
+/// @group no-arguments
+/// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
+@mixin first-child() {
+  &:first-of-type {
+    @content
+  }
+}
+
+/// Select the last exact child
+/// @group no-arguments
+/// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
+@mixin last-child() {
+  &:last-of-type {
+    @content
+  }
+}
+
 /// Select all even children.
 /// @group no-arguments
 /// @content [Write the style you want to apply to the children, and it will be added within the @content directive]
